@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form {
+            max-width: 500px; 
+            margin: 20px auto 0; 
+
+        }
+
+        fieldset {
+            border: 4px groove gray;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: ivory;
+            max-width: 500px;
+            margin: 0 auto;
+}
+
+
+        input,
+        select,
+        textarea,
+        option {
+            width: 100%;
+            /* height: 25px; */
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        option {
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration: royalblue;
+            padding: 15px;
+        }
+
+        legend {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .field {
+            margin-top: 20px;
+        }
+
+        button {
+            width: 50%;
+            border-radius: 5px;
+            height: 30px;
+            color: black;
+            font-size: medium;
+            margin-top: 10px;
+            border: 4px groove grey;
+            display: inline-block;
+
+        }
+
+        label {
+            padding: 8px;
+            font-size: large;
+        }
+
+        span {
+            color: red;
+        }
+
+        input[type=checkbox] {
+            height: 15px;
+            width: auto;
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+            padding: 1px;
+        }
+        
+
+        input[type=radio] {
+            height: 12px;
+            width: auto;
+            margin: 0;
+            padding: 1px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Registration Form </legend>
+
+
+                <div class="field">
+                    <label for="firstname">FirstName<span>*</span>:</label><br>
+                    <input type="text" id="firstname" required placeholder="Enter your firstname">
+                </div>
+
+                <div class="field">
+                    <label for="lastname">LastName<span>*</span>:</label><br>
+                    <input type="text" id="lastname" required placeholder="Enter your lastname">
+                </div>
+
+                <div class="field">
+                    <label for="email">EmailId<span>*</span>:</label><br>
+                    <input type="email" id="email" required placeholder="Enter your emailId">
+                </div>
+
+                <div class="field">
+                    <label for="password">Password<span>*</span>:</label><br>
+                    <input type="password" id="password" required placeholder="Enter your password">
+                </div>
+
+                <div class="field">
+                    <label for="dob">Date of Birth<span>*</span>:</label><br>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <div class="field">
+                    <label for="phone">PhoneNo<span>*</span>:</label><br>
+                    <input type="tel" id="phone" placeholder="Enter you PhoneNo">
+                </div>
+
+                <div class="field">
+                    <label for="gender">Gender<span>*</span>:</label><br>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">FeMale</label><br>
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other</label><br>
+                </div>
+
+
+                <div class="field">
+                    <label for="country">Country<span>*</span>:</label><br>
+                    <select id="country" style="width: 530px;">
+                        <option value="select">----Select Country----</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="dubai">Dubai</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="bio">Bio<span>*</span>:</label><br>
+                    <textarea id="bio" rows="1" cols="50" placeholder="Tell us about yuorself"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="agree">
+                        <input type="checkbox" id="agree" required>
+                        I agree to the terms and conditions
+                        <!-- <input type="checkbox" id="agree"  required> -->
+                    </label>
+                </div>
+
+                <div class="field">
+                    <button type="submit" style="background-color:green" name="submit">Submit</button>
+                    <button type="reset" style="background-color:#fc7044" name="reset">Reset</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
