@@ -1,177 +1,320 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Website</title>
     <style>
-        *{
-            box-sizing: border-box;
+        body {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
         }
-        form {
-            max-width: 500px; 
-            margin: 20px auto 0; 
 
+        p, h1, h2, h3, h4, h5, h6 {
+            padding: 0;
+            margin: 0;
         }
 
-        fieldset {
-            border: 4px groove gray;
-            padding: 20px;
-            border-radius: 20px;
-            background-color: ivory;
-            max-width: 500px;
+        .container {
+            max-width: 1140px;
+            padding: 0;
             margin: 0 auto;
-}
+        }
 
-
-        input,
-        select,
-        textarea,
-        option {
-            width: 100%;
-            /* height: 25px; */
-            border-radius: 5px;
-            padding: 15px;
+        .container2 {
+            text-align: center;
+            font-size: 25px;
+            line-height: 1.5;
             margin-top: 10px;
         }
 
-        option {
+        .card-body {
             text-align: center;
-            text-transform: capitalize;
-            text-decoration: royalblue;
-            padding: 15px;
+            justify-content: center;
+            display: flex;
+            margin-top: 40px;
+            gap: 50px;
         }
 
-        legend {
-            text-align: center;
-            font-size: xx-large;
+        header {
+            padding: 10px 20px;
+            background-color: gray;
+            margin: 0;
+            justify-content: space-between;
+            position: sticky;
         }
 
-        .field {
+        header nav ul {
+            display: flex;
+            list-style-type: none;
+            margin-left: 80px;
+            margin-top: 2px;
+        }
+
+        header nav ul li {
+            padding-left: 70px;
+            font-size: 18px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav span {
+            color: orange;
+            font-size: 18px;
+            margin-top: 2px;
+            margin-left: 60px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        section {
+           margin: 0;
+           padding: 0;
+           
+        }
+
+      
+        button {
+            background-color: rgb(232, 137, 20);
+            color: white;
+            padding: 10px;
+            border: 4px solid white;
             margin-top: 20px;
         }
 
-        button {
-            width: 50%;
-            border-radius: 5px;
-            height: 30px;
-            color: black;
-            font-size: medium;
-            margin-top: 10px;
-            border: 4px groove grey;
-            display: inline-block;
-
+        .welcome img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 8%;
+            width: 100%;
         }
 
-        label {
-            padding: 8px;
-            font-size: large;
+        .welcome {
+            position: relative;
         }
 
-        span {
-            color: red;
+        .msg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            line-height: 1.2;
         }
 
-        input[type=checkbox] {
-            height: 15px;
-            width: auto;
-            display: inline-flex;
-            align-items: center;
-            margin: 0;
-            padding: 1px;
-        }
-        
-
-        input[type=radio] {
-            height: 12px;
-            width: auto;
-            margin: 0;
-            padding: 1px;
-            display: inline-flex;
-            align-items: center;
+        .msg h1 {
+            font-size: 20px;
         }
 
+        .msg h2 {
+            font-size: 40px;
+        }
+
+        .card img {
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .card {
+            margin-top: 2%;
+            border: 1px solid gray;
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.3;
+        }
+
+        .container1 p {
+            font-size: 15px;
+        }
+
+        .card h4 {
+            font-size: 15px;
+        }
+
+        .portfolio .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: unset;
+        }
+
+        .portfolio .card {
+            width: 30%;
+            border: 1px solid gray;
+        }
+
+        .team .card {
+            border-radius: 10px;
+            width: 30%;
+            border: none;
+        }
+
+        .team .card img {
+            border-radius: 100px;
+            object-fit: cover;
+            width: 70%;
+            height: 200px;
+            outline: 3px solid gray;
+        }
+
+        footer {
+            text-align: center;
+            background-color: gray;
+            padding: 4px;
+            margin-top: 20px;
+        }
+    
     </style>
 </head>
 
 <body>
-    <div>
-        <form action="/submit" method="post">
-            <fieldset>
-                <legend>Registration Form </legend>
 
+    <header>
+        <div class="container1">
+            <nav>
+                <span>End Originator</span>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-                <div class="field">
-                    <label for="firstname">FirstName<span>*</span>:</label><br>
-                    <input type="text" id="firstname" required placeholder="Enter your firstname">
+    <div class="container">
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <img src="laptop.jpg" alt="Welcome Image">
+            <div class="container2">
+                <div class="msg">
+                    <h1>Welcome To our Studio</h1>
+                    <h2><strong>It's Nice To Meet You</strong></h2>
+                    <button type="submit">Subscribe</button>
                 </div>
+            </div>
+        </section>
 
-                <div class="field">
-                    <label for="lastname">LastName<span>*</span>:</label><br>
-                    <input type="text" id="lastname" required placeholder="Enter your lastname">
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container2">
+                <h1>Services</h1>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="trolly.png" alt="For Student">
+                        <h1>For Student</h1>
+                        <p>A paragraph is a group of sentences that develop a single idea.</p>
+                    </div>
+                    <div class="card">
+                        <img src="trolly.png" alt="For Student">
+                        <h1>For Student</h1>
+                        <p>A paragraph is a group of sentences that develop a single idea.</p>
+                    </div>
+                    <div class="card">
+                        <img src="trolly.png" alt="For Student">
+                        <h1>For Student</h1>
+                        <p>A paragraph is a group of sentences that develop a single idea.</p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="field">
-                    <label for="email">EmailId<span>*</span>:</label><br>
-                    <input type="email" id="email" required placeholder="Enter your emailId">
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <div class="container2">
+                <h1>Portfolio</h1>
+                <p>Our portfolio is here</p>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="1.jpg" alt="Ishika">
+                        <h1>Ishika</h1>
+                        <h4>Indore</h4>
+                    </div>
+                    <div class="card">
+                        <img src="2.jpg" alt="Ritika">
+                        <h1>Ritika</h1>
+                        <h4>Indore</h4>
+                    </div>
+                    <div class="card">
+                        <img src="3.jpg" alt="Rishabh">
+                        <h1>Rishabh</h1>
+                        <h4>Indore</h4>
+                    </div>
                 </div>
+            </div>
 
-                <div class="field">
-                    <label for="password">Password<span>*</span>:</label><br>
-                    <input type="password" id="password" required placeholder="Enter your password">
+            <div class="card-body">
+                <div class="card">
+                    <img src="4.jpg" alt="Kajal">
+                    <h1>Kajal</h1>
+                    <h4>Indore</h4>
                 </div>
-
-                <div class="field">
-                    <label for="dob">Date of Birth<span>*</span>:</label><br>
-                    <input type="date" id="dob" required>
+                <div class="card">
+                    <img src="5.jpg" alt="Nidhi">
+                    <h1>Nidhi</h1>
+                    <h4>Indore</h4>
                 </div>
-
-                <div class="field">
-                    <label for="phone">PhoneNo<span>*</span>:</label><br>
-                    <input type="tel" id="phone" placeholder="Enter you PhoneNo">
+                <div class="card">
+                    <img src="6.jpg" alt="Aditya">
+                    <h1>Aditya</h1>
+                    <h4>Indore</h4>
                 </div>
+            </div>
+        </section>
 
-                <div class="field">
-                    <label for="gender">Gender<span>*</span>:</label><br>
-                    <input type="radio" id="male" name="gender">
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender">
-                    <label for="female">FeMale</label><br>
-                    <input type="radio" id="other" name="gender">
-                    <label for="other">Other</label><br>
+        <!-- Team Section -->
+        <section class="team">
+            <div class="container2">
+                <h1>Our Team</h1>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="6.jpg" alt="Ashwin">
+                        <h1>Ashwin</h1>
+                        <h4>Developer</h4>
+                    </div>
+                    <div class="card">
+                        <img src="5.jpg" alt="Prachi">
+                        <h1>Prachi</h1>
+                        <h4>Developer</h4>
+                    </div>
+                    <div class="card">
+                        <img src="4.jpg" alt="Bharti">
+                        <h1>Bharti</h1>
+                        <h4>Developer</h4>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-
-                <div class="field">
-                    <label for="country">Country<span>*</span>:</label><br>
-                    <select id="country" style="width: 530px;">
-                        <option value="select">----Select Country----</option>
-                        <option value="india">India</option>
-                        <option value="usa">USA</option>
-                        <option value="dubai">Dubai</option>
-                    </select>
-                </div>
-
-                <div class="field">
-                    <label for="bio">Bio<span>*</span>:</label><br>
-                    <textarea id="bio" rows="1" cols="50" placeholder="Tell us about yuorself"></textarea>
-                </div>
-
-                <div class="field">
-                    <label for="agree">
-                        <input type="checkbox" id="agree" required>
-                        I agree to the terms and conditions
-                        <!-- <input type="checkbox" id="agree"  required> -->
-                    </label>
-                </div>
-
-                <div class="field">
-                    <button type="submit" style="background-color:green" name="submit">Submit</button>
-                    <button type="reset" style="background-color:#fc7044" name="reset">Reset</button>
-                </div>
-
-            </fieldset>
-        </form>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2050 Copyright</p>
+    </footer>
+
 </body>
 
 </html>
