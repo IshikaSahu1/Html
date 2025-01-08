@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FoodOrder</title>
+    <style>
+        .container {
+            max-width: 1140px;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 0 10px 0;
+            background-color: white;
+            margin: 0;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul a {
+            color: red;
+            text-decoration: none;
+        }
+
+        header nav ul li {
+            padding-left: 20px;
+        }
+
+        header nav img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            width: 5%;
+            padding-left: 15px;
+        }
+
+        section {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: 25px;
+
+        }
+
+        .search {
+            background-color: rgb(72, 157, 206);
+        }
+
+        .card-body {
+            display: flex;
+            gap: 60px;
+            margin-top: 50px;
+            justify-content: space-between;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .container1 img {
+            margin-left: 90px;
+            width: 10%;
+            background-position: bottom;
+        }
+
+        .container1 .searchbar {
+            margin-right: 95px;
+            margin-top: 50px;
+        }
+
+        input,
+        button {
+            margin: auto;
+        }
+
+
+        .card img {
+            width: 100%;
+            min-height: 20rem;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+
+        .pizza2 {
+            display: none;
+        }
+
+        .card {
+            width: 25%;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: transparent;
+        }
+
+        .order-card {
+            display: flex;
+            width: 20%;
+           
+        }
+
+        .order-card .section2{
+   
+        }
+        .order-card img {
+            width: 100%;
+          
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <img src="logo.jpg">
+
+                <ul>
+                    <li><a href="https://in.pinterest.com/" target="blank">Home</a></li>
+                    <li><a href="https://github.com/" target="blank">Services</a></li>
+                    <li><a href="https://chatgpt.com/" target="blank">Food</a></li>
+                    <li><a href="https://in.pinterest.com/" target="blank">About Us</a></li>
+                    <li><a href="https://in.pinterest.com/" target="blank">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="search">
+            <div class="container1">
+                <img src="tray.jpg">
+                <input type="search" class="search" placeholder="Search for food">
+                <button type="submit" class="submit">Search</button>
+
+        </section>
+
+        <Section class="food">
+            <h1>Explore Food</h1>
+            <div class="card-body">
+                <div class="card">
+                    <img src="pizza.jpg" class="pizza">
+                    <img src="pizza2.jpg" class="pizza2">
+                </div>
+                <div class="card">
+                    <img src="burger.jpg">
+                </div>
+                <div class="card">
+                    <img src="momos.jpg">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card">
+                    <img src="noodles.jpg">
+                </div>
+                <div class="card">
+                    <img src="manchurian.jpg">
+                </div>
+                <div class="card">
+                    <img src="panner.jpg">
+                </div>
+            </div>
+        </Section>
+
+        <section class="order">
+            <div class="card-body">
+                <div class="order-card">
+                    <div class="section1">  
+                        <img src="pizza2.jpg">
+                    </div>
+                    <div class="section2">
+                        <h4>Panner Pizza</h4>
+                        <h5>290</h5>
+                        <button type="submit" class="sub">Order Now</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
