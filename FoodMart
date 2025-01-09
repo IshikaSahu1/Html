@@ -4,6 +4,28 @@
 <head>
     <title>FoodOrder</title>
     <style>
+
+body {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            background-color: aquamarine;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding: 0;
+            margin: 0;
+        }
+
         .container {
             max-width: 1140px;
             padding: 0;
@@ -50,12 +72,13 @@
 
         section {
             padding: 0;
-            margin: 0;
+            margin:0;
             text-align: center;
             font-size: 25px;
-
+            
         }
 
+    
         .search {
             background-color: rgb(72, 157, 206);
         }
@@ -64,7 +87,7 @@
             display: flex;
             gap: 60px;
             margin-top: 50px;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
 
         .container1 {
@@ -110,24 +133,53 @@
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            background-color: transparent;
+
         }
 
         .order-card {
             display: flex;
             width: 20%;
-           
+            background-color: white;
+            padding: 20px;
+            padding-right: 80px;
+            border-radius: 30px;
+
         }
 
-        .order-card .section2{
-   
+        .order-card .section2 {
+            font-size: 14px;
+            gap: 20px;
+            padding: 20px;
+            line-height: 1.9;
+            width: 100%;
+
         }
+
         .order-card img {
             width: 100%;
-          
             object-fit: cover;
             border-radius: 8px;
+            min-height: 5rem;
 
+        }
+
+        .order-card .section2 .sub {
+            padding-left: 12px;
+            padding-right: 12px;
+            color: white;
+            background-color: red;
+            border-radius: 10px
+        }
+
+        .order {
+            background-color: rgb(191, 183, 183);
+        }
+
+        .food{
+            background-color: white;
+        }
+        .card2{
+            display: inline;
         }
     </style>
 </head>
@@ -157,6 +209,8 @@
         </section>
 
         <Section class="food">
+          <br>
+          <br>
             <h1>Explore Food</h1>
             <div class="card-body">
                 <div class="card">
@@ -172,7 +226,7 @@
             </div>
             <div class="card-body">
                 <div class="card">
-                    <img src="noodles.jpg">
+                    <img src="noodles2.jpg">
                 </div>
                 <div class="card">
                     <img src="manchurian.jpg">
@@ -181,21 +235,64 @@
                     <img src="panner.jpg">
                 </div>
             </div>
+            <br>
+         
         </Section>
 
         <section class="order">
+            <br>
+            <br>
+            <h1>Food Menu</h1>
+            <div class="card2">
             <div class="card-body">
                 <div class="order-card">
-                    <div class="section1">  
+                    <div class="section1">
                         <img src="pizza2.jpg">
                     </div>
                     <div class="section2">
-                        <h4>Panner Pizza</h4>
-                        <h5>290</h5>
+                        <p>PannerPizza</p>
+                        <p>290</p>
                         <button type="submit" class="sub">Order Now</button>
                     </div>
                 </div>
 
+                <div class="order-card">
+                    <div class="section1">
+                        <img src="burger2.jpg">
+                    </div>
+                    <div class="section2">
+                        <p>VegBurger</p>
+                        <p>180</p>
+                        <button type="submit" class="sub">Order Now</button>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="card-body">
+                <div class="order-card">
+                    <div class="section1">
+                        <img src="manchurian.jpg">
+                    </div>
+                    <div class="section2">
+                        <p>Manchurian</p>
+                        <p>290</p>
+                        <button type="submit" class="sub">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div class="section1">
+                        <img src="momos.jpg">
+                    </div>
+                    <div class="section2">
+                        <p>Momos</p>
+                        <p>180</p>
+                        <button type="submit" class="sub">Order Now</button>
+                    </div>
+                </div>
+
+              </div>
 
             </div>
         </section>
