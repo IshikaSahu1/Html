@@ -3,185 +3,8 @@
 
 <head>
     <title>FoodOrder</title>
-    <style>
-
-body {
-            padding: 0;
-            margin: 0;
-            overflow-x: hidden;
-            font-size: 16px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 400;
-            background-color: aquamarine;
-        }
-
-        p,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            padding: 0;
-            margin: 0;
-        }
-
-        .container {
-            max-width: 1140px;
-            padding: 0;
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 0 10px 0;
-            background-color: white;
-            margin: 0;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-        }
-
-
-        header nav {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        header nav ul a {
-            color: red;
-            text-decoration: none;
-        }
-
-        header nav ul li {
-            padding-left: 20px;
-        }
-
-        header nav img {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            object-fit: cover;
-            width: 5%;
-            padding-left: 15px;
-        }
-
-        section {
-            padding: 0;
-            margin:0;
-            text-align: center;
-            font-size: 25px;
-            
-        }
-
-    
-        .search {
-            background-color: rgb(72, 157, 206);
-        }
-
-        .card-body {
-            display: flex;
-            gap: 60px;
-            margin-top: 50px;
-            justify-content: space-evenly;
-        }
-
-        .container1 {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .container1 img {
-            margin-left: 90px;
-            width: 10%;
-            background-position: bottom;
-        }
-
-        .container1 .searchbar {
-            margin-right: 95px;
-            margin-top: 50px;
-        }
-
-        input,
-        button {
-            margin: auto;
-        }
-
-
-        .card img {
-            width: 100%;
-            min-height: 20rem;
-            object-fit: cover;
-            border-radius: 8px;
-
-        }
-
-        .pizza2 {
-            display: none;
-        }
-
-        .card {
-            width: 25%;
-            justify-content: space-between;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-        }
-
-        .order-card {
-            display: flex;
-            width: 20%;
-            background-color: white;
-            padding: 20px;
-            padding-right: 80px;
-            border-radius: 30px;
-
-        }
-
-        .order-card .section2 {
-            font-size: 14px;
-            gap: 20px;
-            padding: 20px;
-            line-height: 1.9;
-            width: 100%;
-
-        }
-
-        .order-card img {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-            min-height: 5rem;
-
-        }
-
-        .order-card .section2 .sub {
-            padding-left: 12px;
-            padding-right: 12px;
-            color: white;
-            background-color: red;
-            border-radius: 10px
-        }
-
-        .order {
-            background-color: rgb(191, 183, 183);
-        }
-
-        .food{
-            background-color: white;
-        }
-        .card2{
-            display: inline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -191,111 +14,266 @@ body {
                 <img src="logo.jpg">
 
                 <ul>
-                    <li><a href="https://in.pinterest.com/" target="blank">Home</a></li>
-                    <li><a href="https://github.com/" target="blank">Services</a></li>
-                    <li><a href="https://chatgpt.com/" target="blank">Food</a></li>
-                    <li><a href="https://in.pinterest.com/" target="blank">About Us</a></li>
-                    <li><a href="https://in.pinterest.com/" target="blank">Contact</a></li>
+                    <div class="dropdown">
+                        <li>Home</li>
+                        <div class="dropdown-content">
+                            <a href="#">Pizza</a>
+                            <a href="#">Momos</a>
+                            <a href="#">Burger</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li>Services</li>
+                        <div class="dropdown-content">
+                            <a href="#">Dine in</a>
+                            <a href="#">Online order</a>
+                            <a href="#">staff</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li>Food</li>
+                        <div class="dropdown-content">
+                            <a href="#">Vegetarian</a>
+                            <a href="#">Non Vegetarian</a>
+                            <a href="#">Vegan</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li>About us</li>
+                        <div class="dropdown-content">
+                            <a href="#">Privacy policy</a>
+                            <a href="#">Company</a>
+                            <a href="#">Staff</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li>Contact Us</li>
+                        <div class="dropdown-content">
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Twiiter</a>
+                        </div>
+                    </div>
                 </ul>
             </nav>
         </header>
 
         <section class="search">
-            <div class="container1">
+            <div style="line-height: 0;">
                 <img src="tray.jpg">
-                <input type="search" class="search" placeholder="Search for food">
+            </div>
+            <div class="searchbar"> <input type="search" class="searchinput" placeholder="Search for food">
                 <button type="submit" class="submit">Search</button>
+            </div>
 
         </section>
 
-        <Section class="food">
-          <br>
-          <br>
+        <section class="food">
+            <br>
+            <br>
             <h1>Explore Food</h1>
             <div class="card-body">
                 <div class="card">
-                    <img src="pizza.jpg" class="pizza">
-                    <img src="pizza2.jpg" class="pizza2">
+                    <img class="card-image" src="pizza.jpg" alt="pizza">
+                    <img class="card-image2" src="pizza2.jpg" alt="pizza2">
+                    <div class="card-content">
+                        <h3>Pizza</h3>
+
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="burger.jpg">
+                    <img class="card-image" src="burger.jpg" alt="burger">
+                    <img class="card-image2" src="burger2.jpg" alt="burger2">
+                    <div class="card-content">
+                        <h3>Burger</h3>
+
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="momos.jpg">
+                    <img class="card-image" src="momos.jpg" alt="momos">
+                    <img class="card-image2" src="momos2.jpg" alt="momos2">
+                    <div class="card-content">
+                        <h3>Momos</h3>
+
+                    </div>
                 </div>
             </div>
             <div class="card-body">
                 <div class="card">
-                    <img src="noodles2.jpg">
+                    <img class="card-image" src="noodles2.jpg" alt="noodles">
+                    <img class="card-image2" src="noodles.jpg" alt="noodles2">
+                    <div class="card-content">
+                        <h3>Noodles</h3>
+
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="manchurian.jpg">
+                    <img class="card-image" src="manchurian.jpg" alt="manchurian">
+                    <img class="card-image2" src="manchurian2.jpg" alt="manchurian2">
+                    <div class="card-content">
+                        <h3>Manchurian</h3>
+
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="panner.jpg">
+                    <img class="card-image" src="panner.jpg" alt="panner">
+                    <img class="card-image2" src="paneer2.jpg" alt="panner2">
+                    <div class="card-content">
+                        <h3>Panner</h3>
+                    </div>
                 </div>
             </div>
             <br>
-         
-        </Section>
+
+        </section>
 
         <section class="order">
             <br>
             <br>
             <h1>Food Menu</h1>
             <div class="card2">
-            <div class="card-body">
-                <div class="order-card">
-                    <div class="section1">
-                        <img src="pizza2.jpg">
+                <div class="card-list">
+                    <div class="order-card">
+                        <div class="section1">
+                            <img src="pizza2.jpg">
+                        </div>
+                        <div class="section2">
+                            <p>Panner Pizza</p>
+                            <p>290</p>
+                            <button type="submit" class="sub">Order Now</button>
+                        </div>
                     </div>
-                    <div class="section2">
-                        <p>PannerPizza</p>
-                        <p>290</p>
-                        <button type="submit" class="sub">Order Now</button>
+
+                    <div class="order-card">
+                        <div class="section1">
+                            <img src="burger2.jpg">
+                        </div>
+                        <div class="section2">
+                            <p>Veg Burger</p>
+                            <p>180</p>
+                            <button type="submit" class="sub">Order Now</button>
+                        </div>
                     </div>
+
                 </div>
 
-                <div class="order-card">
-                    <div class="section1">
-                        <img src="burger2.jpg">
+                <div class="card-list">
+                    <div class="order-card">
+                        <div class="section1">
+                            <img src="manchurian.jpg">
+                        </div>
+                        <div class="section2">
+                            <p>Manchurian</p>
+                            <p>290</p>
+                            <button type="submit" class="sub">Order Now</button>
+                        </div>
                     </div>
-                    <div class="section2">
-                        <p>VegBurger</p>
-                        <p>180</p>
-                        <button type="submit" class="sub">Order Now</button>
+
+                    <div class="order-card">
+                        <div class="section1">
+                            <img src="momos.jpg">
+                        </div>
+                        <div class="section2">
+                            <p> Veg Momos</p>
+                            <p>180</p>
+                            <button type="submit" class="sub">Order Now</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-list">
+                    <div class="order-card">
+                        <div class="section1">
+                            <img src="noodles2.jpg">
+                        </div>
+                        <div class="section2">
+                            <p>Manchurian</p>
+                            <p>290</p>
+                            <button type="submit" class="sub">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="section1">
+                            <img src="paneer2.jpg">
+                        </div>
+                        <div class="section2">
+                            <p>Veg Chilli Panner</p>
+                            <p>180</p>
+                            <button type="submit" class="sub">Order Now</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <br>
+            <br>
+        </section>
 
-              </div>
+        <section class="contactus">
+            <h1>Contact us</h1>
 
-              <div class="card-body">
-                <div class="order-card">
-                    <div class="section1">
-                        <img src="manchurian.jpg">
-                    </div>
-                    <div class="section2">
-                        <p>Manchurian</p>
-                        <p>290</p>
-                        <button type="submit" class="sub">Order Now</button>
-                    </div>
-                </div>
-
-                <div class="order-card">
-                    <div class="section1">
-                        <img src="momos.jpg">
-                    </div>
-                    <div class="section2">
-                        <p>Momos</p>
-                        <p>180</p>
-                        <button type="submit" class="sub">Order Now</button>
-                    </div>
-                </div>
-
-              </div>
-
+            <div class="contactimg">
+                <img src="teamwork.jpg">
             </div>
         </section>
+        <section class="contactform">
+            <div class="contactforminner">
+                <form action="/submit" method="post">
+                    <fieldset>
+                        <legend>Contact Us </legend>
+
+                        <div class="field">
+                            <label for="firstname">FirstName<span>*</span>:</label><br>
+                            <input type="text" id="firstname" required placeholder="Enter your firstname">
+                        </div>
+
+                        <div class="field">
+                            <label for="lastname">LastName<span>*</span>:</label><br>
+                            <input type="text" id="lastname" required placeholder="Enter your lastname">
+                        </div>
+
+                        <div class="field">
+                            <label for="email">EmailId<span>*</span>:</label><br>
+                            <input type="email" id="email" required placeholder="Enter your emailId">
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">PhoneNo<span>*</span>:</label><br>
+                            <input type="tel" id="phone" placeholder="Enter you PhoneNo">
+                        </div>
+
+                        <div class="field">
+                            <label for="gender">Gender<span>*</span>:</label><br>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">FeMale</label><br>
+                            <input type="radio" id="other" name="gender">
+                            <label for="other">Other</label><br>
+                        </div>
+
+
+                        <div class="field">
+                            <label for="country">Country<span>*</span>:</label><br>
+                            <select id="country" style="width: 530px;">
+                                <option value="select">----Select Country----</option>
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="dubai">Dubai</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <button type="submit" style="background-color:green" name="submit">Submit</button>
+                            <button type="reset" style="background-color:#fc7044" name="reset">Reset</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+    </div>
+    </section>
+
     </div>
 </body>
 
