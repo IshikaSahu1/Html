@@ -1,0 +1,298 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: black;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+header {
+    padding: 0 10px 0;
+    background-color: white;
+    margin: 0;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+}
+
+
+header nav ul li {
+    padding-left: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-top: 6px;
+    display: none;
+    position: absolute;
+    background-color: #9e9e9ede;
+    min-width: 120px;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  
+header nav img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 5%;
+    padding-left: 15px;
+}
+
+section {
+    text-align: center;
+    font-size: 22px;
+
+}
+
+h1::selection {
+    color: red;
+    background: yellow;
+}
+
+
+.search img {
+ 
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.3;
+    width: 100%;
+    height: 200px;
+}
+.search{
+   position: relative;
+   transform: translate(-50% 50%);
+}
+
+.search .searchbar {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+input,
+button {
+    border-style: none none solid none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input:focus {
+    background-color: gray;
+    color: black;
+}
+
+.food .card-body {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card-body {
+    display: flex;
+    gap: 5%;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(240, 235, 235, 0.5);
+    color: rgb(8, 8, 8);
+    padding: 10px;
+    text-decoration-line: underline;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.5s ease;
+
+}
+
+.card .card-image2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .card-image {
+    opacity: 0;
+}
+
+.card:hover .card-image2 {
+    opacity: 1;
+}
+
+
+
+.card {
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    justify-content: space-between;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.order-card {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 15px;
+    max-width: 350px;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.card-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.order-card .section2 {
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.order-card img {
+    width: 50%;
+    border-radius: 8px;
+
+}
+
+.order-card .section2 .sub {
+
+    color: white;
+    background-color: rgb(165, 30, 48);
+    border-radius: 10px
+}
+
+.order {
+    background-color: rgb(191, 183, 183);
+}
+
+.food {
+    background-color: rgb(223, 216, 216);
+
+}
+
+.card2 {
+    display: inline;
+
+
+}
+
+.section2::first-line {
+    color: red;
+}
+
+.section1 {
+    width: 100%;
+    object-fit: cover;
+}
+
+.submit {
+    background-color: rgb(231, 85, 31);
+    border: none;
+}
+
+.contactus img{
+    background-size: cover;
+    background-position: center;
+    object-fit: cover; 
+    width: 100%;
+}
+
+.contactus{
+background-color: white;
+
+}
+
+.contactus h1{
+    padding: 50px;
+}
+
+.contactimg{
+    line-height: 0;
+}
+
+form{
+    width: 50%;
+    line-height: 1.8;
+    margin: auto;
+  color: red;
+}
+
