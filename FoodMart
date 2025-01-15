@@ -63,7 +63,7 @@
                 <img src="tray.jpg">
             </div>
             <div class="searchbar"> <input type="search" class="searchinput" placeholder="Search for food">
-                <button type="submit" class="submit">Search</button>
+                <button type="submit" class="searchbutton">Search</button>
             </div>
 
         </section>
@@ -219,61 +219,54 @@
         <section class="contactform">
             <div class="contactforminner">
                 <form action="/submit" method="post">
-                    <fieldset>
-                        <legend>Contact Us </legend>
-
-                        <div class="field">
-                            <label for="firstname">FirstName<span>*</span>:</label><br>
-                            <input type="text" id="firstname" required placeholder="Enter your firstname">
-                        </div>
-
-                        <div class="field">
-                            <label for="lastname">LastName<span>*</span>:</label><br>
-                            <input type="text" id="lastname" required placeholder="Enter your lastname">
-                        </div>
-
-                        <div class="field">
-                            <label for="email">EmailId<span>*</span>:</label><br>
-                            <input type="email" id="email" required placeholder="Enter your emailId">
-                        </div>
-
-                        <div class="field">
-                            <label for="phone">PhoneNo<span>*</span>:</label><br>
-                            <input type="tel" id="phone" placeholder="Enter you PhoneNo">
-                        </div>
-
-                        <div class="field">
-                            <label for="gender">Gender<span>*</span>:</label><br>
-                            <input type="radio" id="male" name="gender">
-                            <label for="male">Male</label><br>
-                            <input type="radio" id="female" name="gender">
-                            <label for="female">FeMale</label><br>
-                            <input type="radio" id="other" name="gender">
-                            <label for="other">Other</label><br>
-                        </div>
 
 
-                        <div class="field">
-                            <label for="country">Country<span>*</span>:</label><br>
-                            <select id="country" style="width: 530px;">
-                                <option value="select">----Select Country----</option>
-                                <option value="india">India</option>
-                                <option value="usa">USA</option>
-                                <option value="dubai">Dubai</option>
-                            </select>
-                        </div>
+                    <div class="field">
+                        <label for="firstname">FirstName<span>*</span>:</label><br>
+                        <input type="text" id="firstname" required placeholder="Enter your firstname">
+                    </div>
 
-                        <div class="field">
-                            <button type="submit" style="background-color:green" name="submit">Submit</button>
-                            <button type="reset" style="background-color:#fc7044" name="reset">Reset</button>
-                        </div>
+                    <div class="field">
+                        <label for="lastname">LastName<span>*</span>:</label><br>
+                        <input type="text" id="lastname" required placeholder="Enter your lastname">
+                    </div>
 
-                    </fieldset>
+                    <div class="field">
+                        <label for="email">EmailId<span>*</span>:</label><br>
+                        <input type="email" id="email" required placeholder="Enter your emailId">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">PhoneNo<span>*</span>:</label><br>
+                        <input type="tel" id="phone" placeholder="Enter you PhoneNo">
+                    </div>
+
+
+                    <div class="field">
+                        <label for="country">Country<span>*</span>:</label><br>
+                        <select id="country">
+                            <option value="select">--Select Country--</option>
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="dubai">Dubai</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <button type="submit" class="formbutton" style="background-color:green"
+                            name="submit">Submit</button>
+                        <button type="reset" class="formbutton" style="background-color:#fc7044"
+                            name="reset">Reset</button>
+                    </div>
                 </form>
-            </div>
-    </div>
+            </div>      
     </section>
 
+        <section class="contactusbottom">
+            <div class="backimg">
+            <img src="foodorderbg.jpg">
+            </div>
+        </section >
     </div>
 </body>
 
