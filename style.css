@@ -19,6 +19,10 @@ h6 {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     max-width: 1140px;
     padding: 0;
@@ -77,12 +81,13 @@ header nav ul li {
     text-decoration: none;
     display: block;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 
-  
+
 header nav img {
     background-size: cover;
     background-position: center;
@@ -105,7 +110,7 @@ h1::selection {
 
 
 .search img {
- 
+
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -113,15 +118,17 @@ h1::selection {
     width: 100%;
     height: 200px;
 }
-.search{
-   position: relative;
-   transform: translate(-50% 50%);
+
+.search {
+    position: relative;
+    transform: translate(-50% 50%);
 }
 
 .search .searchbar {
     position: absolute;
-    top: 20%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 input,
@@ -269,30 +276,78 @@ input:focus {
     border: none;
 }
 
-.contactus img{
+.contactus img {
     background-size: cover;
     background-position: center;
-    object-fit: cover; 
+    object-fit: cover;
     width: 100%;
+    height: 400px;
 }
 
-.contactus{
-background-color: white;
+.contactus {
+    background-color: white;
+    position: relative;
+    z-index: 0;
 
 }
 
-.contactus h1{
+.contactus h1 {
     padding: 50px;
 }
 
-.contactimg{
+.contactimg {
     line-height: 0;
 }
 
-form{
-    width: 50%;
-    line-height: 1.8;
-    margin: auto;
-  color: red;
+.contactforminner {
+    margin-top: -200px;
+    position: relative;
+    z-index: 9;
 }
 
+form {
+    width: 500px;
+    line-height: 1.5;
+    margin: auto;
+    color: black;
+    border: 2px solid black;
+    background-color: gray;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+form input,select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.formbutton{
+    width: 49%;
+    padding: 8px;
+    margin-top: 15px;
+}
+legend {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.field{
+    text-align: left;
+    font-size: 14px;
+}
+
+.contactusbottom img{
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.2;
+    height: 300px;
+}
+.backimg{
+    margin-top: -175px;
+
+}
