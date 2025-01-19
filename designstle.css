@@ -1,0 +1,125 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+    padding: 5px;
+    font-size: 18px;
+}
+
+header nav .logo{
+    padding-left: 40px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding-right: 40px;
+}
+
+.topimg img{
+    width: 100%;
+    max-height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.toplogo{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top{
+    position: relative;
+}
+
+span{
+    padding: 10px;
+    background-color: gray;
+}
+
+.house-grid{
+    display: grid;
+     grid-template-columns: auto auto auto ;
+   gap: 20px;
+    
+}
+
+.container {
+    max-width: 1140px;
+    padding: 10px;
+    margin: 0 auto;
+    
+    
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-body{
+    position: relative;
+}
+.card-content{
+
+        position: absolute;
+        top: 0%;
+        background-color: black;
+        color: white;
+}
+
+.aboutusmsg p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.about-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 20px;
+}
+
+
+
+
+.about-card img{
+    width: 100%;
+    filter: grayscale(1);
+}
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #f1f1f1;
+}
